@@ -1,0 +1,132 @@
+@import "layout/var";
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 991px){
+        flex-direction: column;
+        min-height: 819px;
+    }
+
+    @media (max-width: 767px){
+        min-height: 320px;
+    }
+
+    &__item {
+        position: relative;
+        padding: 0 10px;
+
+        @media (max-width: 991px){
+            padding: 0;
+            margin: 27px 0;
+        }
+
+        @media (max-width: 767px){
+            margin: 6px 0;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        color: #fff;
+        text-transform: uppercase;
+
+        @media (max-width: 991px){
+            font-size: 28px;
+            color: #000;
+        }
+
+        @media (max-width: 767px){
+            font-size: 14px;
+        }
+
+        &:hover {
+            font-weight: $b;
+        }
+    }
+
+    &__line {
+        height: 14px;
+        width: 1px;
+        background: #fff;
+        margin: 0 auto;
+
+        @media (max-width: 991px){
+            display: none;
+        }
+    }
+
+    &--footer {
+        @media (max-width: 991px){
+            flex-direction: row;
+            min-height: auto;
+            flex-wrap: wrap;
+        }
+
+        .menu-list__item {
+            @media (max-width: 991px){
+                padding: 0 15px;
+                margin: 6px 0;
+            }
+
+            &:after {
+                @media (max-width: 991px){
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 14px;
+                    width: 1px;
+                    background: #000;
+                    margin: 0 auto;
+                }
+
+                @media (max-width: 767px){
+                    display: none;
+                }
+            }
+
+            &:last-child {
+                &:after {
+                    @media (max-width: 991px){
+                        display: none;
+                    }
+                }
+            }
+
+            &:nth-child(9) {
+                &:after {
+                    @media (max-width: 991px){
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .menu-list__link {
+            color: #000;
+            @media (max-width: 991px){
+                font-size: 14px;
+            }
+        }
+
+        .menu-list__line {
+            background: #000;
+        }
+    }
+}
