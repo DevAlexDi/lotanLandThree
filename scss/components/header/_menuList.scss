@@ -5,7 +5,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     @media (max-width: 991px){
@@ -19,7 +19,6 @@
 
     &__item {
         position: relative;
-        padding: 0 10px;
 
         @media (max-width: 991px){
             padding: 0;
@@ -41,8 +40,9 @@
 
     &__link {
         font-size: 14px;
-        color: #fff;
-        text-transform: uppercase;
+        color: #444444;
+        display: block;
+        padding: 21px 12px;
 
         @media (max-width: 991px){
             font-size: 28px;
@@ -54,18 +54,8 @@
         }
 
         &:hover {
-            font-weight: $b;
-        }
-    }
-
-    &__line {
-        height: 14px;
-        width: 1px;
-        background: #fff;
-        margin: 0 auto;
-
-        @media (max-width: 991px){
-            display: none;
+            color: #6c9c30;
+            background: #f4f4f4;
         }
     }
 

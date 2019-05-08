@@ -1,7 +1,6 @@
 @import "layout/var";
 
 .header-contacts {
-    padding: 7px 0 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,38 +29,11 @@
         }
     }
 
-    &__search-input {
+    &__tel {
         display: block;
-        border: none;
-        width: 100px;
-        background: transparent;
-        padding: 2px 0 2px 40px;
-        background-image: url(../img/search.svg);
-        background-repeat: no-repeat;
-        background-position: center left;
-        background-size: 19px;
-        color: #4a4a4a;
+        background: #4b9c30;
+        color: #fff;
         font-size: 14px;
-        outline: none;
-
-        @media (max-width: 767px){
-            width: 100%;
-        }
-
-        &::-webkit-input-placeholder {
-            color:#4e4e4f;
-        }
-
-        &::-moz-placeholder {
-            color:#4e4e4f;
-        }
-
-        &:-moz-placeholder {
-            color:#4e4e4f;
-        }
-
-        &:-ms-input-placeholder {
-            color:#4e4e4f;
-        }
+        padding: 9px 28px;
     }
 }

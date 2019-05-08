@@ -1,0 +1,22 @@
+@import "layout/var";
+
+.cube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ab9485;
+    border-radius: 3px;
+    transform-origin: center;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    margin-left: 15px;
+
+    &__arrow {
+        width: 6px;
+        position: relative;
+        transform-origin: center;
+        transform: rotate(-45deg);
+    }
+}

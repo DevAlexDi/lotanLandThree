@@ -1,7 +1,7 @@
 @import "layout/var";
 
 .menu {
-    padding-bottom: 27px;
+    border-top: 1px solid #e1e1e1;
 
     @media (max-width: 991px){
         display: none;

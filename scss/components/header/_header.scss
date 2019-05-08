@@ -4,10 +4,10 @@
     position: relative;
 
     &__contacts {
+        background: #f8f7fc;
     }
 
     &__nav {
-        background: #000;
 
         @media (max-width: 991px){
             position: relative;
