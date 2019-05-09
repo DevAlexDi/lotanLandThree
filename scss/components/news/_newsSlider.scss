@@ -1,0 +1,106 @@
+@import "layout/var";
+
+.news-slider {
+    width: calc(100% + 70px);
+    left: -35px;
+    position: relative;
+
+    @media (max-width: 991px){
+        width: calc(100% + 60px);
+        left: -30px;
+    }
+
+    @media (max-width: 767px){
+        width: 100%;
+        left: 0;
+    }
+
+    &__slide {
+        padding: 0 35px;
+        outline: none;
+
+        @media (max-width: 991px){
+            padding: 0 30px;
+        }
+
+        @media (max-width: 767px){
+            padding: 0;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        left: 25px;
+        bottom: calc(100% + 249px);
+        display: flex!important;
+        align-items: center;
+        z-index: 10;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: 991px){
+            bottom: calc(100% + 118px);
+        }
+
+        @media (max-width: 767px){
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+
+        }
+
+        li {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            transform-origin: center;
+            transform: rotate(45deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+
+            @media (max-width: 767px){
+                margin: 0 3px;
+            }
+
+            button {
+                font-size: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                outline: none;
+                border-radius: 3px;
+                border: 1px solid transparent;
+                background: transparent;
+                position: relative;
+                padding: 0;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    background: #d7d7d7;
+                    border-radius: 3px; 
+                }
+            }
+
+            &.slick-active {
+                button {
+                    border-color: #c09b1d;
+                    &:before {
+                        width: 17px;
+                        height: 17px;
+                        background: #6b9701;
+                    }
+                }
+            }
+        }
+    }
+}

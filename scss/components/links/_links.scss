@@ -1,0 +1,26 @@
+@import "layout/var";
+
+.links {
+    display: flex;
+
+    &__side {
+        padding-top: 7px;
+        width: 50%;
+        
+        &:first-child {
+            padding-right: 3.5px;
+        }
+
+        &:last-child {
+            padding-left: 3.5px;
+        }
+    }
+
+    &__link {
+        min-height: 435px;
+        background: #faf9fe;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

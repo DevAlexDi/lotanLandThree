@@ -1,0 +1,12 @@
+@import "layout/var";
+
+.works {
+   width: calc(100% + 10px);
+   transform: translateX(-5px);
+   display: flex;
+  
+   &__item {
+      width: 25%;
+      padding: 5px;
+   }
+}

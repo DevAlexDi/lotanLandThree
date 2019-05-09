@@ -1,0 +1,25 @@
+@import "layout/var";
+
+.news {
+   position: relative;
+   overflow: hidden;
+   padding-top: 160px;
+   padding-bottom: 68px;
+
+   &__show-more-wr {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__show-more {
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 17px;
+      color: #c09915;
+      font-weight: 900;
+      padding-right: 40px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+   }
+}

@@ -1,0 +1,49 @@
+@import "layout/var";
+
+.work {
+   background: #faf9fe;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 335px;
+
+   &:hover {
+      .work__hover-block {
+         z-index: 2;
+         transform: scale(1.05,1.05);
+         opacity: 1;
+      }
+   }
+
+   &__hover-block {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: linear-gradient(-45deg, #f5d1ab, #fa5cb9);
+      transition: transform 0.3s, opacity 0.3s;
+   }
+
+   &__descr {
+      height: 100%;
+      border: 1px solid #fff;
+      transform: scale(0.95,0.95);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 15px;
+   }
+
+   &__text {
+      max-width: 385px;
+      color: #fff;
+      margin-bottom: 32px;
+      text-align: justify;
+      color: #fff;
+      font-size: 12px;
+   }
+}

@@ -1,0 +1,105 @@
+@import "layout/var";
+
+.baner {
+   &__slide {
+       min-height: 700px;
+       outline: none;
+       background-size: cover;
+       background-position: center;
+       
+   }
+
+   .slick-dots {
+        position: absolute;
+        left: 63px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: 1366px){
+            left: 30px;
+        }
+
+        @media (max-width: 1300px){
+            top: auto;
+            bottom: 30px;
+            right: 60px;
+        }
+        
+
+        @media (max-width: 1199px){
+            top: 50%;
+            bottom: auto;
+        }
+
+        @media (max-width: 1100px){
+            top: auto;
+            bottom: 30px;
+            right: 60px;
+        }
+
+        @media (max-width: 991px){
+            top: 50%;
+            bottom: auto;
+        }
+
+        @media (max-width: 767px){
+            right: 50%;
+            transform: translateX(50%);
+            bottom: -50px;
+            top: auto;
+            display: flex!important;
+            justify-content: center;
+            width: auto;
+        }
+
+        li {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            transform-origin: center;
+            transform: rotate(45deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                font-size: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                outline: none;
+                border-radius: 3px;
+                border: 1px solid transparent;
+                background: transparent;
+                position: relative;
+                padding: 0;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    background: #d7d7d7;
+                    border-radius: 3px; 
+                }
+            }
+
+            &.slick-active {
+                button {
+                    border-color: #c09b1d;
+                    &:before {
+                        width: 17px;
+                        height: 17px;
+                        background: #6b9701;
+                    }
+                }
+            }
+        }
+    }
+}
