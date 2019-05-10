@@ -14,4 +14,89 @@
             z-index: 15;
         }
     }
+
+    &__sm-soc {
+        @media (max-width: 991px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 45px 10px 65px;
+            max-width: 740px;
+            margin: 0 auto;
+        }
+    }
+
+    &__sm-sub-menu {
+        @media (max-width: 991px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 740px;
+            padding: 0 10px;
+            margin: 0 auto 130px;
+        }
+
+        @media (max-width: 767px){
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__sm-sub-menu-item {
+        @media (max-width: 991px){
+           font-size: 17px;
+           color: #fff;
+           
+        }
+
+        @media (max-width: 767px){
+            font-size: 14px;
+            padding: 0 15px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__close-menu {
+        @media (max-width: 991px){
+            display: block;
+            border: none;
+            background: transparent;
+            outline: none;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            left: 0;
+        }
+
+        &:before {
+            @media (max-width: 991px){
+                content: '';
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%) rotate(45deg);
+                transform-origin: center;
+                height: 100%;
+                width: 4px;
+                background: #fff;
+            }
+        }
+
+        &:after {
+            @media (max-width: 991px){
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
+                transform-origin: center;
+                height: 4px;
+                width: 100%;
+                background: #fff;
+            }
+        }
+    }
 }

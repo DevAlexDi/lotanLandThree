@@ -1,0 +1,16 @@
+@import "layout/var";
+
+.footer {
+    &__top {
+        margin-bottom: 10px;
+    }
+
+    &__mid {
+        padding: 26px 0;
+    }
+
+    &__bott {
+        background: #faf9fe;
+        padding: 16px 0;
+    }
+}

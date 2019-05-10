@@ -7,11 +7,10 @@
     padding: 13px 0 15px 0;
 
     @media (max-width: 991px){
-        padding: 72px 0;
+        padding: 20px 0 30px;
     }
 
     @media (max-width: 767px){
-        flex-wrap: wrap;
         padding: 25px 0;
     }
 
@@ -19,18 +18,13 @@
         &--left {
             width: 100%;
             display: flex;
-
-            @media (max-width: 767px){
-                order: 1;
-                width: 50%;
-            }
         }
 
         &--mid {
             flex-shrink: 0;
+
             @media (max-width: 767px){
-                width: 100%;
-                margin-bottom: 25px;
+                max-width: 137px;
             }
         }
 
@@ -39,10 +33,6 @@
             display: flex;
             justify-content: flex-end;
 
-            @media (max-width: 767px){
-                order: 2;
-                width: 50%;
-            }
         }
     }
 
@@ -52,7 +42,7 @@
         }
 
         @media (max-width: 767px){
-            margin: 0 auto;
+            max-width: 137px;
         }
     }
 
@@ -66,6 +56,11 @@
         padding-right: 40px;
         text-transform: uppercase;
         letter-spacing: 1px;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #4b9c30;
+        }
 
         @media (max-width: 991px){
             font-size: 15px;
@@ -75,6 +70,43 @@
 
     &__cube {
         margin-left: 15px;
-        
+    }
+
+    &__menu-open {
+        @media (max-width: 991px){
+            position: relative;
+            left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 68px;
+            height: 68px;
+            border: none;
+            padding: 0;
+            background: #6b9701;
+            border-radius: 10px;
+            transform-origin: center;
+            outline: none;
+            transform: rotate(45deg);
+        }
+
+        @media (max-width: 767px){
+            width: 50px;
+            height: 50px;
+        }
+        span {
+            @media (max-width: 991px){
+                display: block;
+                transform-origin: center;
+                transform: rotate(-45deg);
+                color: #fff;
+                font-size: 15px;
+                text-transform: uppercase;
+            }
+
+            @media (max-width: 767px){
+                font-size: 13px;
+            }
+        }
     }
 }

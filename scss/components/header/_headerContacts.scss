@@ -6,7 +6,7 @@
     align-items: center;
 
     @media (max-width: 767px){
-        flex-wrap: wrap;
+        
     }
 
     &__side {
@@ -23,10 +23,22 @@
         margin-right: 25px;
         font-size: 14px;
         color: #4a4a4a;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #4b9c30;
+        }
+
+        @media (max-width: 1199px){
+            margin-right: 15px;
+            font-size: 13px;
+        }
 
         @media (max-width: 991px){
-            margin-right: 20px;
+            font-size: 14px;
+            margin-right: 10px;
         }
+
     }
 
     &__tel {
@@ -35,5 +47,34 @@
         color: #fff;
         font-size: 14px;
         padding: 9px 28px;
+
+        @media (max-width: 991px){
+            padding: 0;
+            background: transparent;
+            color: #4b9c30;
+            font-weight: $b;
+            font-size: 15px;
+        }
+
+        @media (max-width: 767px){
+            font-size: 13px;
+            margin-right: 10px;
+        }
+    }
+
+    &__call-me {
+        @media (max-width: 991px){
+            display: block;
+            background: #c19c1d;
+            color: #fff;
+            padding: 9px 28px;
+            font-weight: $b;
+            font-size: 15px;
+        }
+
+        @media (max-width: 767px){
+            font-size: 13px;
+            padding: 7px 15px;
+        }
     }
 }

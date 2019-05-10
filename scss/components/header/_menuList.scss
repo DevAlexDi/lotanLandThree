@@ -10,11 +10,11 @@
 
     @media (max-width: 991px){
         flex-direction: column;
-        min-height: 819px;
+        padding-bottom: 140px;
     }
 
     @media (max-width: 767px){
-        min-height: 320px;
+        padding-bottom: 40px;
     }
 
     &__item {
@@ -22,11 +22,11 @@
 
         @media (max-width: 991px){
             padding: 0;
-            margin: 27px 0;
+            margin-bottom: 28px;
         }
 
         @media (max-width: 767px){
-            margin: 6px 0;
+            margin-bottom: 12px;
         }
 
         &:first-child {
@@ -44,9 +44,17 @@
         display: block;
         padding: 21px 12px;
 
+        @media (max-width: 1199px){
+            padding: 21px 0px;
+            font-size: 13px;
+        }
+
         @media (max-width: 991px){
-            font-size: 28px;
-            color: #000;
+            font-size: 21px;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 0;
+            color: #fff;
         }
 
         @media (max-width: 767px){
@@ -56,67 +64,40 @@
         &:hover {
             color: #6c9c30;
             background: #f4f4f4;
+
+            @media (max-width: 1199px){
+                background: transparent;
+            }
         }
     }
 
-    &--footer {
+    &--footer-theme {
+
         @media (max-width: 991px){
             flex-direction: row;
-            min-height: auto;
             flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 0;
         }
-
-        .menu-list__item {
+        .menu-list__item{
             @media (max-width: 991px){
-                padding: 0 15px;
-                margin: 6px 0;
-            }
-
-            &:after {
-                @media (max-width: 991px){
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    height: 14px;
-                    width: 1px;
-                    background: #000;
-                    margin: 0 auto;
-                }
-
-                @media (max-width: 767px){
-                    display: none;
-                }
-            }
-
-            &:last-child {
-                &:after {
-                    @media (max-width: 991px){
-                        display: none;
-                    }
-                }
-            }
-
-            &:nth-child(9) {
-                &:after {
-                    @media (max-width: 991px){
-                        display: none;
-                    }
-                }
+                margin-bottom: 7px;
+                padding: 0 20px;
             }
         }
 
         .menu-list__link {
-            color: #000;
+            padding: 0;
+
             @media (max-width: 991px){
                 font-size: 14px;
+                color: $black;
+                text-transform: inherit;
             }
-        }
 
-        .menu-list__line {
-            background: #000;
+            &:hover {
+                background: transparent;
+            }
         }
     }
 }

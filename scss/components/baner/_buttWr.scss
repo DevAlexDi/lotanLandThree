@@ -17,14 +17,36 @@
         border-right: 11px solid #dac581;
         outline: none;
         transition: border-color 0.3s, background-color 0.3s;
+
+        &:hover {
+            background: #4b9c30;
+        }
     }
 
     &--white {
+
+        @media (max-width: 991px){
+            height: 100%;
+            width: 100%;
+            display: flex;
+
+        }
         .butt-wr__butt {
             background: #fff;
             color: $black;
             border-right: none;
             position: relative;
+
+            @media (max-width: 1366px){
+                min-width: 240px;
+            }
+
+            @media (max-width: 991px){
+                width: 100%;
+                min-width: auto;
+                height: 100%;
+                text-align: center;
+            }
 
             &::before {
                 content: "";
@@ -35,6 +57,10 @@
                 height: 100%;
                 width: 11px;
                 background: rgba(255,255,255, 0.5);
+
+                @media (max-width: 991px){
+                    display: none;
+                }
             }
         }
     }

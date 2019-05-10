@@ -5,8 +5,16 @@
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 991px){
+    padding: 70px 0 80px;
+  }
+
   &__title-block {
       margin-bottom: 80px;
+
+      @media (max-width: 767px){
+        margin-bottom: 35px;
+      }
   }
 
   &__sub-title {

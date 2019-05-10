@@ -13,6 +13,10 @@
     flex-shrink: 0;
     margin-left: 15px;
 
+    @media (max-width: 991px){
+        display: none;
+    }
+
     &__arrow {
         width: 6px;
         position: relative;

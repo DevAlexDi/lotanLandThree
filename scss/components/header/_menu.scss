@@ -5,21 +5,11 @@
 
     @media (max-width: 991px){
         display: none;
-        background: rgba(243,199,199,0.97);
+        background: rgba(133,180,78,0.97);
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-    }
-
-    &__sm-wr {
-        @media (max-width: 991px){
-            padding-top: 90px;
-        }
-
-        @media (max-width: 767px){
-            padding-top: 30px;
-        }
     }
 
     &__sm-soc {
